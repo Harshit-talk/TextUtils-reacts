@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let a = 'THis is Me'
+        // let b = 27;
+        // const c = 3;
+        // const d = b + c;
+        // console.log(d); 
+        // console.log(a);
+        // function hello(){
+        //     console.log("Hello!!! Harshit Kumar");
+        // }
+        // let obj = {
+        //     H: 29,
+        //     M: 65,
+        //     R: 50,
+        //     func: function myfunc(number){
+        //         console.log("This is my Function:- " + number);
+        //     }
+        // }
+        // document.addEventListener('click', function click(){
+        //     console.log("Clicked");
+        //     // alert("Hello User!!!");
+        //     let conf = confirm("Are you Sure???")
+        //     console.log(conf);
+        // })
+        let x = [10,12,15,18,20,22];
+        console.log(this)
+        let mobj = {
+            a: this,
+            myfunc: (number) => {
+                console.log("The number is "+ this);
+            }
+        }
+        mobj.myfunc();
+        console.log(mobj.a);
+        setTimeout(()=>{
+            console.log("Hahahahahahaha");
+        },3000);
+        console.log("Main Niche Wala script hoon.")
+    </script>
+</head>
+<body>
+    <h3>This is Harshit Kumar.</h3>
+</body>
+</html>
